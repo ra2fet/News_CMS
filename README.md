@@ -34,9 +34,9 @@ node server.js
 
 ## Third (Database)
 
-Create a Mysql database using xammp for example:
+Create an empty Mysql database using xampp with any name you choose and don't forget to edit .env file  :blush:
 
-then type these commandes:
+Then type these commandes:
 
 -   To migrate all tables
 
@@ -57,7 +57,7 @@ then type these commandes:
 
 ## System Description:
 
-MVP of a news CMS where clients can create articles with GIF images.
+MVP of  news CMS where clients can create articles with GIF images.
 
 System Features:
 
