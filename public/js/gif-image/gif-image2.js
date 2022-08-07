@@ -158,14 +158,12 @@ class MultipleGifImage {
 
         // Search Section
         html += "<div id='search-section' class='mx-3 mt-2' >";
-        html += '<form action="" class="">';
         html += ' <div class="input-group mb-3">';
         html +=
-            '<input id="searchInput" type="text" class="form-control form-control-md" placeholder="Search Here">';
+            '<input id="searchInput"  type="text" class="form-control form-control-md" placeholder="Search Here">';
         html +=
-            '<button type="button" onclick="search()" id="searchGif" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>';
+            '<button type="button" autofocus  onclick="search()" id="searchGif" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>';
         html += "</div>";
-        html += "</form>";
         html += "</div>";
         // End Search Section
 

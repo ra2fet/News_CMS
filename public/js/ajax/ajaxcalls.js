@@ -33,10 +33,7 @@ function search() {
                 htmlData +=
                     "<figure style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
                 htmlData += "<img  src='" + e.gif + "' >";
-                htmlData +=
-                    "<figcaption class='text-truncate'>" +
-                    e.title +
-                    "</figcaption>";
+                htmlData += "<figcaption >" + e.title + "</figcaption>";
                 htmlData += "</figure>";
             });
 
