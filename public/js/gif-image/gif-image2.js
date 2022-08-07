@@ -105,13 +105,10 @@ class MultipleGifImage {
 
                 data.forEach((e) => {
                     htmlData +=
-                        "<div style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
-                    htmlData +=
-                        "<img  class='img-fluid h-50 w-50' src='" +
-                        e.gif +
-                        "' >";
-                    htmlData += "<p class='text-truncate'>" + e.title + "</p>";
-                    htmlData += "</div>";
+                        "<figure style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
+                    htmlData += "<img  src='" + e.gif + "' >";
+                    htmlData += "<figcaption >" + e.title + "</figcaption>";
+                    htmlData += "</figure>";
                 });
 
                 htmlData += "</div>";

@@ -31,11 +31,13 @@ function search() {
 
             data.forEach((e) => {
                 htmlData +=
-                    "<div style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
+                    "<figure style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
+                htmlData += "<img  src='" + e.gif + "' >";
                 htmlData +=
-                    "<img  class='img-fluid h-50 w-50' src='" + e.gif + "' >";
-                htmlData += "<p class='text-truncate'>" + e.title + "</p>";
-                htmlData += "</div>";
+                    "<figcaption class='text-truncate'>" +
+                    e.title +
+                    "</figcaption>";
+                htmlData += "</figure>";
             });
 
             htmlData += "</div>";
@@ -100,11 +102,10 @@ function load_more_trending(offset, limit) {
             var htmlData = "";
             data.forEach((e) => {
                 htmlData +=
-                    "<div style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
-                htmlData +=
-                    "<img  class='img-fluid h-50 w-50' src='" + e.gif + "' >";
-                htmlData += "<p class='text-truncate'>" + e.title + "</p>";
-                htmlData += "</div>";
+                    "<figure style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
+                htmlData += "<img   src='" + e.gif + "' >";
+                htmlData += "<figcaption >" + e.title + "</figcaption>";
+                htmlData += "</figure>";
             });
 
             // See More
@@ -168,11 +169,10 @@ function load_more_search(offset, limit) {
             var htmlData = "";
             data.forEach((e) => {
                 htmlData +=
-                    "<div style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
-                htmlData +=
-                    "<img  class='img-fluid h-50 w-50' src='" + e.gif + "' >";
-                htmlData += "<p class='text-truncate'>" + e.title + "</p>";
-                htmlData += "</div>";
+                    "<figure style='cursor:pointer' onclick='itemFunc(event)'  class='col-3  text-center '>";
+                htmlData += "<img   src='" + e.gif + "' >";
+                htmlData += "<figcaption >" + e.title + "</figcaption>";
+                htmlData += "</figure>";
             });
 
             // See More
@@ -205,7 +205,7 @@ function saveGIF(event) {
     var images = item
         .parent()
         .prev()
-        .find("div.col-3.active")
+        .find("figure.col-3.active")
         .children("img")
         .get();
     console.log(images);

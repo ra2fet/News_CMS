@@ -27,3 +27,33 @@
     height: 1px;
     color: #fff;
 }
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    overflow: hidden;
+    height: 100% !important;
+    line-height: 100% !important;
+    text-align: center;
+}
+
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 170px;
+    max-width: 100%;
+    margin: auto;
+}
+
+figure img {
+    height: 120px;
+
+    max-width: 100%;
+    /* background-size: cover; */
+}
