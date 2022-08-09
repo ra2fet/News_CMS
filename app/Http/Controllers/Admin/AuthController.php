@@ -80,12 +80,11 @@ class AuthController extends Controller
  
             error_log('Some message here.');
             error_log(Auth::user()->user_type);
-            if (Auth::user()->user_type == 1) {
+            if (Auth::user()->user_type == 1 || Auth::user()->user_type == 2 ) {
                 
                 return redirect('/dashboard');
             }
 
-            // return Auth::user()->hasRole('Admin');
                  return redirect('/login');
          }
         return redirect()->route('login')->with(['error' => 'Incorrect email or password']);
